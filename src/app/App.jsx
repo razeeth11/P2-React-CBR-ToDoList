@@ -1,16 +1,10 @@
-import { useTheme } from "next-themes";
 import "../styles/App.css";
-import { Button } from "@/components/ui/button";
+import { TodoList } from "../components/ToDoList/ToDoList";
 
 function App() {
-  const { theme, setTheme } = useTheme();
   return (
     <>
-      <div>
-        <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          Dark
-        </Button>
-      </div>
+      <TodoList />
     </>
   );
 }
